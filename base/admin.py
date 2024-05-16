@@ -6,10 +6,10 @@ class SchoolAdmin(admin.ModelAdmin):
     list_display = "id", "Name"
 
 class ClassAdmin(admin.ModelAdmin):
-    list_display = "id", "Class_name"
+    list_display = "id", "Name"
 
 class AnswersAdmin(admin.ModelAdmin):
-    list_display = "id", "Answers"
+    list_display = "id", "Answer"
 
 class AssessmentAdmin(admin.ModelAdmin):
     list_display = "id", "Name"

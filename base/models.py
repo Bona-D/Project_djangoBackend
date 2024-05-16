@@ -7,31 +7,31 @@ class School(models.Model):
 
 class Class(models.Model):
     # id = models.AutoField(primary_key=True)
-    Class_name = models.CharField(max_length=255)
+    Name = models.CharField(max_length=255)
 
 class Assessment_Areas(models.Model):
     # id = models.AutoField(primary_key=True)
     Name = models.CharField(max_length=255)
 
 class Student(models.Model):
-    id = models.AutoField(primary_key=True)
+    # id = models.AutoField(primary_key=True)
     Fullname = models.CharField(max_length=255)
 
 class Answers(models.Model):
-    # id = models.AutoField(primary_key=True)
-    Answers = models.CharField(max_length=255)
+    id = models.AutoField(primary_key=True)
+    Answer = models.CharField(max_length=10)
 
 class Awards(models.Model):
-    id = models.AutoField(primary_key=True)
+    # id = models.AutoField(primary_key=True)
     Name = models.CharField(max_length=255)
 
 class Subject(models.Model):
-    id = models.AutoField(primary_key=True)
+    # id = models.AutoField(primary_key=True)
     Subject = models.CharField(max_length=255)
     Subject_score = models.IntegerField(null=True)
 
 class Summary(models.Model):
-    School_id = models.AutoField(primary_key=True)
+    # School_id = models.AutoField(primary_key=True)
     sydney_participants = models.IntegerField(null=True)
     sydney_percentile = models.IntegerField(null=True)
     Assessment_Areas_Id = models.IntegerField(null=True)
